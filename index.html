@@ -51,6 +51,7 @@
     <script>
         //span태그에 접근
         const num = document.getElementById('press');
+        const btn = document.querySelector('button');
         //press counter 초기값
         let counter = 0;
 
@@ -67,6 +68,7 @@
         function reset(){
             counter = 0;
             num.innerHTML = counter;
+            btn.blur();
         }
     </script>
 </body>
